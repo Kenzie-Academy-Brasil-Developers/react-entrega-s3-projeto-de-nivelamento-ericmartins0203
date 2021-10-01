@@ -68,6 +68,12 @@ function App() {
             )
             .toFixed(2)}
         </p>
+        <p>
+          Desconto total :
+          {cartList
+            .reduce((acc, item) => acc + Number(item.discount), 0)
+            .toFixed(2)}
+        </p>
         <ul>
           {cartList &&
             cartList.map((item, index) => (
