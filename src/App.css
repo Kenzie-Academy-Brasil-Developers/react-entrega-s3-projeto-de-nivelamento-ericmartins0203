@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+aside {
+  width: 100vw;
+}
+
+hr {
+  background-color: whitesmoke;
+  width: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+input,
+button {
+  font-size: large;
+  padding: 5px;
+}
+
+input {
+  width: 250px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
+  width: 200px;
+  height: 351px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart {
+  border: 2px solid black;
+  height: 180px;
+}
+
+@media screen and (min-width: 700px) {
+  .App {
+    flex-direction: row;
+  }
+  .App-header {
+    width: 80vw;
+  }
+  aside {
+    width: 20vw;
+  }
+  input {
+    width: 400px;
+  }
+}
